@@ -1,9 +1,4 @@
-a = {}
-a[1] = 111
-a[2] = 222
-a[4] = 444
-a[3] = 333
-print(a.keys())
-a.pop(2)
-print(a.keys())
-print(a.keys()[0])
+a = [2, 4, 6, 8]
+for num in a:
+    num /= 2
+print(a)
