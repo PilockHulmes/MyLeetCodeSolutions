@@ -23,12 +23,16 @@ class MaxHeapq:
         result = heapq.heapreplace(self.heap, elem)
         return - result
 
+    def peek(self, elem):
+        return -self.heap[0]
+
 max_heap = MaxHeapq()
 
 max_heap.push(1)
 max_heap.push(2)
 max_heap.push(3)
 max_heap.push(4)
+print(max_heap.heap)
 print(max_heap.pop())
 print(max_heap.pop())
 print(max_heap.pop())
